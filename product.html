@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-------------------------------------Page header-------------------------------------------------------------------->
+
+<head>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Robot Juice: Fictitious cycle lubricants.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+</head>
+
+<!------------------------------------- Page Body -------------------------------------------------------------------->
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html"><img src="robot-juice-images/new-robot-logo3.png" alt="Robot Juice brand logo"
+                        id="logo-pic"></a>
+            </div>
+            <div class="burger-menu" id="burger-menu" role="button" aria-label="Toggle navigation" aria-expanded="false"
+                tabindex="0">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="navigate">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="product.html">Products</a></li>
+                <li><a class="nav-link" href="#section3">Protect</a></li>
+                <li><a class="nav-link" href="#section4">Stocklist's</a></li>
+                <li><a class="nav-link" href="#section5">Events</a></li>
+                <li><a class="nav-link" href="#section6">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--------------------------------- Main Body ------------------------------------------------------------------>
+    <main id="main-content">
+        <div class="product-box">
+            <div class="thumb-list">
+                <img src="robot-juice-images/prod-thumb1.jpg" data-large="robot-juice-images/robotjuicebikeoil.jpg"
+                    alt="Close-up of bike chain with oil applied" class="pic-thumb" tabindex="0" role="button"
+                    aria-label="View bike chain image">
+                <img src="robot-juice-images/prod-thumb2.jpg" data-large="robot-juice-images/bikechain-bikeoil.jpg"
+                    alt="Close-up of dry lubricant on chain" class="pic-thumb" tabindex="0" role="button"
+                    aria-label="View dry lubrication image">
+                <img src="robot-juice-images/prod-thumb3.jpg" data-large="robot-juice-images/prod-thumb3.jpg"
+                    alt="Spilled wet lubricant showing texture" class="pic-thumb" tabindex="0" role="button"
+                    aria-label="View wet lubrication image">
+            </div>
+
+            <div class="main-display">
+                <img src="robot-juice-images/robotjuicebikeoil.jpg" alt="Large bottle of Robot Juice Bike Oil"
+                    class="main-img" id="mainImage">
+            </div>
+
+            <div class="console" tabindex="0">
+                <h2 class="prod-name">Bike Oil</h2>
+                <span class="price">£99.99</span>
+                <div class="dropdown-box">
+                    <select class="size" aria-label="Size">
+                        <option>Size</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+
+                    <select class="quantity" aria-label="Quantity">
+                        <option>Qty</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <button class="buy-btn">BUY NOW</button>
+                <a href="#" class="near-store">Find nearest store</a>
+                <div class="share-box">
+                    <p id="share-head">SHARE</p>
+                    <a href="http://facebook.com/" class="share-button"><img src="robot-juice-images/facebook.jpg"
+                            alt="Facebook logo"></a>
+                    <a href="http://x.com" class="share-button"><img src="robot-juice-images/twitter.jpg"
+                            alt="Twitter logo"></a>
+                    <a href="#" class="share-button"><img src="robot-juice-images/email.jpg" alt="Email icon"></a>
+                </div>
+                <div class="prod-descrip" tabindex="0">
+                    <p>Robot Juice bike oil for bicycles stops rust and other corrosion from starting.
+                        Applied to already corroding metals it breaks down the corrosion and starts preventing it
+                        from building up and protects from the point of contact.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-box" tabindex="0">
+            <div class="similar-head">
+                Similar Products
+            </div>
+            <div class="similar-list">
+                <a href="#" class="similar-prod-link"><img src="robot-juice-images/simprod.jpg"
+                        alt="Generic similar product bottle"></a>
+                <a href="#" class="similar-prod-link"><img src="robot-juice-images/simprod.jpg"
+                        alt="Generic similar product bottle"></a>
+                <a href="#" class="similar-prod-link"><img src="robot-juice-images/simprod.jpg"
+                        alt="Generic similar product bottle"></a>
+                <a href="#" class="similar-prod-link"><img src="robot-juice-images/simprod.jpg"
+                        alt="Generic similar product bottle"></a>
+                <a href="#" class="similar-prod-link"><img src="robot-juice-images/simprod.jpg"
+                        alt="Generic similar product bottle"></a>
+                <a href="#" class="similar-prod-link"><img src="robot-juice-images/simprod.jpg"
+                        alt="Generic similar product bottle"></a>
+            </div>
+        </div>
+
+        <div class="prod-review-box" tabindex="0">
+            <h2>Product Reviews</h2>
+            <div id="review-container"></div>
+            <button id="read-review-button">READ ALL REVIEWS</button>
+        </div>
+    </main>
+    <!--------------------------------------------------- Page Bottom ------------------------------------------------------------------------->
+    <div class="bottom-box">
+        <div class="bottom-box-inner">
+            <div class="magazine">
+                <img src="robot-juice-images/cyclemagazine.jpg" alt="Cycling Magazine cover">
+            </div>
+            <div class="reviews-box" tabindex="0">
+                <h2 id="reviews-header">Lastest Reviews</h2>
+                <p id="reviews-descript">Cycling magazine has given Robot Juice a 5 star rating in its lastest
+                    reviews
+                    of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand dry lubs.
+                </p>
+            </div>
+            <div class="links-box">
+                <h2 id="links-header">Links</h2>
+                <a href="#" class="link">Edge Hill University</a>
+                <a href="#" class="link">Dave Walsh</a>
+                <a href="#" class="link">https://twitter.com/walsh_d</a>
+                <a href="#" class="link">CIS1110 - Web Design and Development module</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                Robot Juice Fictitious Products Not Ltd., Unit 9¼, Privet Drive, Little Whingeing, Surrey DN18
+                5RP<br>
+                Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk
+            </div>
+
+            <div class="footer-right">
+                <a href="#">Contact Us</a> |
+                <a href="#">Privacy</a> |
+                <a href="#">Terms & Conditions</a> |
+                <a href="#">Accessibility</a><br>
+                Copyright © 2018 Dave Walsh. Design by Dave Walsh
+            </div>
+        </div>
+    </footer>
+    <!------------------------------------- JavaScript -------------------------------------------------------------------->
+    <script src="reviews.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "product_id": "bikeoil",
+    "nickname": "Dave",
+    "review": "I am not good enough to tell the difference between a bad and good oil, but it works.",
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "product_id": "bikeoil",
+    "nickname": "Ann Other",
+    "review": "Its slippery.",
+    "rating": 1
+  },
+  {
+    "id": 3,
+    "product_id": "bikeoil",
+    "nickname": "Tinman",
+    "review": "This oil makes my joints work super well!",
+    "rating": 5
+  },
+  {
+    "id": 489,
+    "product_id": "bikeoil",
+    "nickname": "John",
+    "review": "This cycle oil product is great, my bike runs smoother and quieter than ever.",
+    "rating": 5
+  },
+  {
+    "id": 490,
+    "product_id": "bikeoil",
+    "nickname": "Sarah",
+    "review": "I've been using this bike oil for a while now and it's great! It really helps keep my chain clean and lubricated.",
+    "rating": 4
+  },
+  {
+    "id": 491,
+    "product_id": "bikeoil",
+    "nickname": "David",
+    "review": "This cycle oil is just okay, it's nothing special but it gets the job done.",
+    "rating": 3
+  },
+  {
+    "id": 492,
+    "product_id": "bikeoil",
+    "nickname": "Amy",
+    "review": "I wouldn't recommend this bike oil, it seems to attract dirt and grime which can cause more harm than good in the long run.",
+    "rating": 2
+  },
+  {
+    "id": 493,
+    "product_id": "bikeoil",
+    "nickname": "Tom",
+    "review": "I am not really good enough to tell the difference between a good oil and a bad, but it works.",
+    "rating": 3
+  },
+  {
+    "id": 494,
+    "product_id": "bikeoil",
+    "nickname": "Alice",
+    "review": "I am really impressed with this cycle oil, it's made a noticeable difference in the performance of my bike.",
+    "rating": 5
+  },
+  {
+    "id": 495,
+    "product_id": "bikeoil",
+    "nickname": "Mark",
+    "review": "I've used many different types of bike oil over the years and this one is by far the best. Highly recommend!",
+    "rating": 5
+  },
+  {
+    "id": 496,
+    "product_id": "bikeoil",
+    "nickname": "Julia",
+    "review": "I don't like this bike oil at all, it's too thick and makes my bike feel sluggish.",
+    "rating": 1
+  },
+  {
+    "id": 497,
+    "product_id": "bikeoil",
+    "nickname": "Luke",
+    "review": "I've only used this cycle oil a few times, but so far it seems to be working great!",
+    "rating": 4
+  },
+  {
+    "id": 498,
+    "product_id": "bikeoil",
+    "nickname": "Maggie",
+    "review": "I'm not sure if it's the oil or something else, but my bike seems to be making more noise than before I started using this product.",
+    "rating": 2
+  },
+  {
+    "id": 499,
+    "product_id": "bikeoil",
+    "nickname": "Sam",
+    "review": "This bike oil is good, but not great. I've used better products in the past.",
+    "rating": 3
+  },
+  {
+    "id": 500,
+    "product_id": "bikeoil",
+    "nickname": "Chris",
+    "review": "I love this cycle oil, it's affordable and gets the job done. Highly recommend!",
+    "rating": 4
+  }
+]

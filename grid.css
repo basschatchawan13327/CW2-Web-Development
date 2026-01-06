@@ -1,0 +1,619 @@
+/* ===== RESET / BOX MODEL ===== */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ===== ACCESSIBILITY ===== */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #b82020;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Visible Focus State */
+/* Visible Focus State */
+*:focus-visible {
+    outline: 3px solid #ffbf00;
+    /* High contrast yellow/orange */
+    outline-offset: 2px;
+}
+
+/* ===== GLOBAL LAYOUT ===== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.logo a,
+.logo img {
+    display: inline-block;
+    width: auto;
+}
+
+#logo-pic {
+    display: block;
+    height: auto;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Base Nav Layout */
+
+/* Base Nav Layout */
+
+.navigate {
+    width: 100%;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+.navigate ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    visibility: visible;
+    opacity: 1;
+    max-height: none;
+    /* Reset potentially inherited mobile styles */
+}
+
+.navigate ul li {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    height: 70px;
+}
+
+.navigate ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== BANNER ===== */
+
+.banner {
+    width: 100%;
+}
+
+#banner-pic {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== SLOGAN ===== */
+
+.slogan {
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* ===== PRODUCT GRID ===== */
+
+.product-prop {
+    display: flex;
+    width: 75%;
+    gap: 20px;
+}
+
+.content {
+    width: 25%;
+}
+
+.pic-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.prop-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* ===== NEWS SECTION ===== */
+
+.news-update {
+    display: flex;
+    width: 75%;
+    margin: 40px auto;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.left-box {
+    flex: 2;
+}
+
+.right-box {
+    flex: 1;
+    margin-top: 20px;
+}
+
+/* ===== BOTTOM SECTION ===== */
+
+.bottom-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-box-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 200px;
+}
+
+/* Note: .bottom-right-content removed */
+
+/* ===== FOOTER ===== */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-inner {
+    width: 75%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left,
+.footer-right {
+    text-align: left;
+}
+
+
+/*====== Product Page ====== */
+
+/* ... (omitting strictly unchanged chunks for brevity if not targeted, but using context matching) ... */
+/* NOTE: The tool finds the context. I'm targeting the section from .bottom-box-inner down to media queries */
+/* Actually, I need to be careful with the Replace tool. I will target specific blocks. */
+
+/* REVERTING GLOBAL */
+
+/* RESPONSIVE UPDATES */
+@media (max-width: 992px) {
+
+    header,
+    .slogan,
+    .product-prop,
+    .news-update,
+    .bottom-box-inner,
+    .footer-inner,
+    .product-box,
+    .similar-box,
+    .prod-review-box {
+        width: 90%;
+    }
+
+    .product-prop {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .content {
+        width: 45%;
+    }
+
+    .news-update {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .right-box {
+        width: 100%;
+    }
+
+    .bottom-box-inner {
+        gap: 40px;
+        /* Responsive: reduce gap */
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navigate ul {
+        flex-direction: column;
+    }
+
+    .navigate ul li {
+        height: 55px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Product Page Mobile */
+    .product-box {
+        flex-direction: column;
+    }
+
+    .thumb-list {
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: center;
+    }
+
+    .similar-list {
+        flex-wrap: wrap;
+    }
+
+    /* Stack Bottom Section */
+    .bottom-box-inner {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Stack Footer */
+    .footer-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+}
+
+
+/*====== Product Page ====== */
+
+/* ===== GLOBAL LAYOUT ===== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+/* ===== NAVIGATION LAYOUT ===== */
+
+.navigate {
+    width: 100%;
+}
+
+.navigate ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.navigate ul li {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    height: 70px;
+}
+
+.navigate ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== PRODUCT GALLERY LAYOUT ===== */
+
+.product-box {
+    width: 75%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+}
+
+.thumb-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-display {
+    flex: 5;
+}
+
+.console {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== SIMILAR PRODUCT LAYOUT ===== */
+
+.similar-box {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.similar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.prod-review-box {
+    width: 75%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== BOTTOM SECTION LAYOUT ===== */
+
+.bottom-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-box-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 200px;
+}
+
+/* ===== FOOTER LAYOUT ===== */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-inner {
+    width: 75%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left,
+.footer-right {
+    text-align: left;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+
+    header,
+    .slogan,
+    .product-prop,
+    .news-update,
+    .bottom-box-inner,
+    .footer-inner,
+    .product-box,
+    .similar-box,
+    .prod-review-box {
+        width: 90%;
+    }
+
+    .product-prop {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .content {
+        width: 45%;
+    }
+
+    .news-update {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .right-box {
+        width: 100%;
+    }
+
+    .bottom-box-inner {
+        gap: 80px;
+    }
+
+    /* Stack Footer for Tablet */
+    .footer-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navigate ul {
+        flex-direction: column;
+        display: flex;
+        /* Keep flex for layout, hide with height */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        /* Prevent focus when closed */
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
+        width: 100%;
+    }
+
+    .navigate ul.active {
+        max-height: 500px;
+        /* Adjust as needed */
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0s linear 0s;
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        /* Optional spacing */
+    }
+
+    .burger-menu {
+        display: flex;
+        /* Show burger on mobile */
+        margin: 0;
+        /* Remove centering */
+    }
+
+    .navigate ul li {
+        height: 55px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Product Page Mobile */
+    .product-box {
+        flex-direction: column;
+    }
+
+    .main-display {
+        order: 1;
+    }
+
+    .thumb-list {
+        order: 2;
+        flex-direction: row;
+        overflow-x: auto;
+        /* Allow scrolling if many thumbs */
+        justify-content: center;
+        margin-top: 10px;
+        /* Spacing between main img and thumbs */
+    }
+
+    .console {
+        order: 3;
+    }
+
+    .similar-list {
+        flex-wrap: wrap;
+    }
+
+    .bottom-box-inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+
+    /* Text Left for Reviews and Links on Mobile */
+    .reviews-box,
+    .links-box {
+        text-align: left;
+        width: 100%;
+        max-width: 400px;
+        /* Optional: limit width if needed, or keep 100% */
+    }
+}
