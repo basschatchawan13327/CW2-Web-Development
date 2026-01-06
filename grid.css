@@ -222,9 +222,12 @@ footer {
     align-items: flex-start;
 }
 
-.footer-left,
-.footer-right {
+.footer-left {
     text-align: left;
+}
+
+.footer-right {
+    text-align: right;
 }
 
 
@@ -456,9 +459,12 @@ footer {
     align-items: flex-start;
 }
 
-.footer-left,
-.footer-right {
+.footer-left {
     text-align: left;
+}
+
+.footer-right {
+    text-align: right;
 }
 
 /* ===== RESPONSIVE ===== */

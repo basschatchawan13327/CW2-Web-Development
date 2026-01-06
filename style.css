@@ -333,6 +333,10 @@ body {
     /* Brighter Red */
 }
 
+.buy-btn:active {
+    transform: scale(0.98);
+}
+
 .near-store {
     color: grey;
     text-decoration: none;
@@ -510,10 +514,15 @@ footer {
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 #read-review-button:hover {
-    background-color: #900000;
+    background-color: #e03e3e;
+}
+
+#read-review-button:active {
+    transform: scale(0.98);
 }
 
 /* ===== RESPONSIVE TWEAKS ===== */
