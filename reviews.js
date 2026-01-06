@@ -1,3 +1,10 @@
+/**
+ * REVIEWS.JS
+ * 
+ * This script handles the dynamic loading and rendering of product reviews for the product.html page.
+ * It fetches review data from a local JSON file ('reviews.json') and displays it in a paginated format.
+ * It also handles the image gallery interactivity on the product page and the global burger menu navigation.
+ */
 
 // =========================================================
 // PAGE: PRODUCT.HTML
@@ -57,6 +64,8 @@ function renderAverageRating(reviews) {
 }
 
 // Function to load reviews from JSON file
+// This function uses the Fetch API to retrieve data from 'reviews.json'.
+// Upon success, it parses the JSON, calculates the average rating, and displays the first batch of reviews.
 async function loadReviews() {
     try {
         const response = await fetch('reviews.json');
@@ -70,6 +79,8 @@ async function loadReviews() {
 }
 
 // Function to display the next batch of reviews (Load More)
+// This function implements pagination by slicing the 'allReviews' array based on 'currentIndex'
+// and the defined 'reviewsPerPage'. It then increments the index for the next load.
 function showNextReviews() {
     const nextReviews = allReviews.slice(currentIndex, currentIndex + reviewsPerPage);
     renderReviews(nextReviews);
@@ -81,21 +92,24 @@ function showNextReviews() {
 }
 
 // Function to render the review list items
+// This function takes an array of review objects and iterates through them.
+// For each review, it constructs an HTML template string and appends it to the 'reviewContainer'.
+// It dynamically inserts the star rating, nickname, formatted product name, and review text.
 function renderReviews(reviews) {
     if (!reviewContainer) return;
     reviews.forEach(review => {
         const reviewHTML = `
             <div class="review-item">
-                <div class="review-icon">
+                <div class="review-icon" tabindex="0">
                     <img src="robot-juice-images/reviewicon1.jpg" alt="Reviewer Avatar">
                 </div>
                 <div class="review-info">
-                    <div class="review-rating">${getStars(review.rating)}</div>
-                    <h3 class="review-title">${review.nickname}</h3>
-                    <p class="product-id">Product: ${review.product_id.charAt(0).toUpperCase() + review.product_id.slice(1)}</p>
+                    <div class="review-rating" tabindex="0">${getStars(review.rating)}</div>
+                    <h3 class="review-title" tabindex="0">${review.nickname}</h3>
+                    <p class="product-id" tabindex="0">Product: ${review.product_id === 'bikeoil' ? 'Bike oil' : review.product_id.charAt(0).toUpperCase() + review.product_id.slice(1)}</p>
                 </div>
                 <div class="review-body">
-                    <p class="review-text">${review.review}</p>
+                    <p class="review-text" tabindex="0">${review.review}</p>
                 </div>
             </div>
             <hr class="review-divider">

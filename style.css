@@ -191,13 +191,13 @@ footer {
 
 .footer-left,
 .footer-right {
-    color: black;
+    color: white;
     font-size: 15px;
     line-height: 1.6;
 }
 
 .footer-right a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -398,13 +398,13 @@ footer {
 
 .footer-left,
 .footer-right {
-    color: black;
+    color: white;
     font-size: 15px;
     line-height: 1.6;
 }
 
 .footer-right a {
-    color: black;
+    color: white;
     text-decoration: none;
     margin: 0 4px;
 }

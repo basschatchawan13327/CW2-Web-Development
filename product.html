@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-------------------------------------Page header-------------------------------------------------------------------->
 
 <head>
     <link rel="stylesheet" href="grid.css">
@@ -13,10 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
 </head>
 
-<!------------------------------------- Page Body -------------------------------------------------------------------->
-
 <body>
     <a href="#main-content" class="skip-link">Skip to Content</a>
+    <!-- ========================================================= HEADER SECTION ========================================================= -->
     <header>
         <div class="header-top">
             <div class="logo">
@@ -41,7 +39,7 @@
             </ul>
         </nav>
     </header>
-    <!--------------------------------- Main Body ------------------------------------------------------------------>
+    <!-- ========================================================= MAIN CONTENT ========================================================= -->
     <main id="main-content">
         <div class="product-box">
             <div class="thumb-list">
@@ -82,12 +80,12 @@
                 <button class="buy-btn">BUY NOW</button>
                 <a href="#" class="near-store">Find nearest store</a>
                 <div class="share-box">
-                    <p id="share-head">SHARE</p>
+                    <p id="share-head" tabindex="0">SHARE</p>
                     <a href="http://facebook.com/" class="share-button"><img src="robot-juice-images/facebook.jpg"
-                            alt="Facebook logo"></a>
+                            alt="Share to Facebook"></a>
                     <a href="http://x.com" class="share-button"><img src="robot-juice-images/twitter.jpg"
-                            alt="Twitter logo"></a>
-                    <a href="#" class="share-button"><img src="robot-juice-images/email.jpg" alt="Email icon"></a>
+                            alt="Share to Twitter"></a>
+                    <a href="#" class="share-button"><img src="robot-juice-images/email.jpg" alt="Share to Email"></a>
                 </div>
                 <div class="prod-descrip" tabindex="0">
                     <p>Robot Juice bike oil for bicycles stops rust and other corrosion from starting.
@@ -97,9 +95,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="similar-box" tabindex="0">
-            <div class="similar-head">
+        <!-- ========================================================= SIMILAR PRODUCTS SECTION ========================================================= -->
+        <div class="similar-box">
+            <div class="similar-head" tabindex="0">
                 Similar Products
             </div>
             <div class="similar-list">
@@ -118,13 +116,14 @@
             </div>
         </div>
 
-        <div class="prod-review-box" tabindex="0">
-            <h2>Product Reviews</h2>
+        <!-- ========================================================= REVIEWS SECTION ========================================================= -->
+        <div class="prod-review-box">
+            <h2 id="review-header" tabindex="0">Product Reviews</h2>
             <div id="review-container"></div>
-            <button id="read-review-button">READ ALL REVIEWS</button>
+            <button id="read-review-button" tabindex="0">READ ALL REVIEWS</button>
         </div>
     </main>
-    <!--------------------------------------------------- Page Bottom ------------------------------------------------------------------------->
+    <!-- ========================================================= BOTTOM CONTENT SECTION ========================================================= -->
     <div class="bottom-box">
         <div class="bottom-box-inner">
             <div class="magazine">
@@ -146,6 +145,8 @@
             </div>
         </div>
     </div>
+
+    <!-- ========================================================= FOOTER SECTION ========================================================= -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-left">
@@ -163,7 +164,7 @@
             </div>
         </div>
     </footer>
-    <!------------------------------------- JavaScript -------------------------------------------------------------------->
+    <!-- ========================================================= SCRIPT SECTION ========================================================= -->
     <script src="reviews.js"></script>
 </body>
 

@@ -230,10 +230,6 @@ footer {
 
 /*====== Product Page ====== */
 
-/* ... (omitting strictly unchanged chunks for brevity if not targeted, but using context matching) ... */
-/* NOTE: The tool finds the context. I'm targeting the section from .bottom-box-inner down to media queries */
-/* Actually, I need to be careful with the Replace tool. I will target specific blocks. */
-
 /* REVERTING GLOBAL */
 
 /* RESPONSIVE UPDATES */
