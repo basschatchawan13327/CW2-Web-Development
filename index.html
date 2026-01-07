@@ -43,7 +43,7 @@
         </div>
     </header>
     <!-- ========================================================= SLOGAN SECTION ========================================================= -->
-    <section class="slogan" tabindex="0">
+    <section class="slogan" tabindex="0" role="region" aria-label="Slogan">
         <h1>Robot Juice is the ultimate fictitious bicycle and motorcycle lubricant oil.</h1>
     </section>
 
@@ -149,12 +149,20 @@
             <div class="right-box">
                 <section class="poll">
                     <h2 id="poll-header" tabindex="0">Reader Poll</h2>
-                    <span id="poll-question" tabindex="0">Are Robot Juice the best and most usable and accessible fake
-                        oils
-                        around?</span>
-                    <form>
-                        <label><input type="radio" name="vote" value="yes">Yes</label>
-                        <label><input type="radio" name="vote" value="no">No</label>
+                    <form id="poll-form">
+                        <fieldset>
+                            <legend id="poll-question" tabindex="0">Are Robot Juice the best and most usable and
+                                accessible fake
+                                oils
+                                around?</legend>
+                            <div>
+                                <label><input type="radio" name="vote" value="yes">Yes</label>
+                                <label><input type="radio" name="vote" value="no">No</label>
+                            </div>
+                        </fieldset>
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
                     </form>
                 </section>
                 <section class="competition">
@@ -178,7 +186,7 @@
                     <img src="robot-juice-images/cyclemagazine.jpg"
                         alt="Cycling Magazine cover featuring Robot Juice review" tabindex="0">
                 </div>
-                <div class="reviews-box" tabindex="0">
+                <div class="reviews-box">
                     <h2 id="reviews-header" tabindex="0">Lastest Reviews</h2>
                     <p id="reviews-descript" tabindex="0">Cycling magazine has given Robot Juice a 5 star rating in its
                         lastest

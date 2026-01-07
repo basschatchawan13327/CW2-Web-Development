@@ -28,13 +28,7 @@ body {
     top: 0;
 }
 
-/* Visible Focus State */
-/* Visible Focus State */
-*:focus-visible {
-    outline: 3px solid #ffbf00;
-    /* High contrast yellow/orange */
-    outline-offset: 2px;
-}
+
 
 /* ===== GLOBAL LAYOUT ===== */
 

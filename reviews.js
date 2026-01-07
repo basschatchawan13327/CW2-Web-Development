@@ -161,3 +161,16 @@ if (burgerMenu && navList) {
 }
 
 
+// =========================================================
+// INDEX.HTML: POLL INTERACTION
+// =========================================================
+const pollForm = document.getElementById('poll-form');
+
+if (pollForm) {
+    pollForm.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent actual form submission
+        alert("Thank you for participation!");
+    });
+}
+
+

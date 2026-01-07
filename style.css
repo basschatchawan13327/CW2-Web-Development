@@ -65,6 +65,7 @@ body {
 
 .navigate ul li:hover a {
     color: white;
+    text-decoration: underline;
 }
 
 /* ===== BANNER ===== */
@@ -160,6 +161,16 @@ body[class*="font-step-"] .slogan h1 {
     color: #b82020;
     display: block;
     margin-bottom: 10px;
+}
+
+#poll-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#poll-form button {
+    margin-top: 10px;
 }
 
 /* ===== BOTTOM SECTION ===== */
@@ -270,6 +281,7 @@ body {
 
 .navigate ul li:hover a {
     color: white;
+    text-decoration: underline;
 }
 
 /* ===== PRODUCT STYLE ===== */
