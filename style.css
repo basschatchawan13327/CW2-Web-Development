@@ -68,6 +68,19 @@ body {
     text-decoration: underline;
 }
 
+/* Add focus style for accessibility */
+/* Add focus style for accessibility - Solid Visible Outline */
+.navigate ul li a:focus,
+.nav-link:focus {
+    outline: 3px solid #0056b3 !important;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px white;
+    /* Contrast ring */
+    border-radius: 2px;
+    position: relative;
+    z-index: 10;
+}
+
 /* ===== BANNER ===== */
 
 .banner {
