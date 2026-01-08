@@ -69,9 +69,12 @@ body {
 }
 
 /* Add focus style for accessibility */
-/* Add focus style for accessibility - Solid Visible Outline */
+/* Add focus style for accessibility - Solid Visible Outline (Global) */
 .navigate ul li a:focus,
-.nav-link:focus {
+.nav-link:focus,
+.prop-descript:focus,
+.item-descript:focus,
+[tabindex="0"]:focus {
     outline: 3px solid #0056b3 !important;
     outline-offset: 2px;
     box-shadow: 0 0 0 4px white;
