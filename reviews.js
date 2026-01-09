@@ -155,6 +155,36 @@ if (loadMoreButton) {
 const burgerMenu = document.getElementById('burger-menu');
 const navList = document.querySelector('.navigate ul');
 
+const buyButton = document.querySelector('.buy-btn');
+const sizeSelect = document.querySelector('.size');
+const quantitySelect = document.querySelector('.quantity');
+
+if (buyButton) {
+    buyButton.addEventListener('click', () => {
+        const size = sizeSelect.value;
+        const qty = quantitySelect.value;
+
+        if (size !== 'Size' && qty === 'Qty') {
+            alert("Please select quantity.");
+            return;
+        }
+
+        if (size === 'Size' && qty !== 'Qty') {
+            alert("Please select size.");
+            return;
+        }
+
+        if (size === 'Size' && qty === 'Qty') {
+            alert("Please select size.");
+            return;
+        }
+
+        alert("Thank you for your purchase.");
+        if (sizeSelect) sizeSelect.selectedIndex = 0;
+        if (quantitySelect) quantitySelect.selectedIndex = 0;
+    });
+}
+
 if (burgerMenu && navList) {
     burgerMenu.addEventListener('click', () => {
         const isExpanded = burgerMenu.getAttribute('aria-expanded') === 'true';
@@ -182,6 +212,14 @@ const pollForm = document.getElementById('poll-form');
 if (pollForm) {
     pollForm.addEventListener('submit', (e) => {
         e.preventDefault(); // Prevent actual form submission
+
+        const selectedOption = document.querySelector('input[name="vote"]:checked');
+
+        if (!selectedOption) {
+            alert("Please select an option!");
+            return;
+        }
+
         alert("Thank you for participation!");
     });
 }
