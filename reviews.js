@@ -91,6 +91,19 @@ function showNextReviews() {
     }
 }
 
+// Function to display ALL remaining reviews
+// This function fetches all remaining reviews starting from 'currentIndex' to the end of the array,
+// renders them, and then hides the 'Read All Reviews' button.
+function showRemainingReviews() {
+    const remainingReviews = allReviews.slice(currentIndex);
+    renderReviews(remainingReviews);
+    currentIndex = allReviews.length; // Update index to end
+
+    if (loadMoreButton) {
+        loadMoreButton.style.display = 'none'; // Hide button after showing all
+    }
+}
+
 // Function to render the review list items
 // This function takes an array of review objects and iterates through them.
 // For each review, it constructs an HTML template string and appends it to the 'reviewContainer'.
@@ -128,7 +141,7 @@ function getStars(rating) {
 }
 
 if (loadMoreButton) {
-    loadMoreButton.addEventListener('click', showNextReviews);
+    loadMoreButton.addEventListener('click', showRemainingReviews);
     loadReviews();
 } else if (document.querySelector('.prod-review-box')) {
     // If button missing but section exists, try loading anyway (edge case)
